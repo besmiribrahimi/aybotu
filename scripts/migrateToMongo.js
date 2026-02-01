@@ -102,6 +102,12 @@ async function migrate() {
   console.log('\n📦 Migrating Mod Logs...');
   if (modlogData?.actions) {
     for (const action of modlogData.actions) {
+      // Skip if no userId
+      if (!action.userId) {
+        console.log(`  ⚠ Skipping mod action (no userId): ${action.username || 'unknown'}`);
+        continue;
+      }
+
       // Check if this exact action already exists
       const existing = await ModLog.findOne({
         guildId: action.guildId,
@@ -111,18 +117,22 @@ async function migrate() {
       });
 
       if (!existing) {
-        await ModLog.create({
-          guildId: action.guildId,
-          oderId: action.userId,
-          username: action.username,
-          action: action.action.replace(/\s*\([^)]*\)/, ''), // Remove duration from action name
-          moderator: action.moderator,
-          moderatorId: action.moderatorId || 'unknown',
-          reason: action.reason || 'No reason provided',
-          duration: action.action.match(/\(([^)]+)\)/)?.[1] || null,
-          timestamp: new Date(action.timestamp)
-        });
-        console.log(`  ✓ Mod action for user ${action.username} migrated`);
+        try {
+          await ModLog.create({
+            guildId: action.guildId,
+            oderId: action.userId,
+            username: action.username || 'Unknown',
+            action: action.action.replace(/\s*\([^)]*\)/, ''), // Remove duration from action name
+            moderator: action.moderator || 'Unknown',
+            moderatorId: action.moderatorId || 'unknown',
+            reason: action.reason || 'No reason provided',
+            duration: action.action.match(/\(([^)]+)\)/)?.[1] || null,
+            timestamp: new Date(action.timestamp)
+          });
+          console.log(`  ✓ Mod action for user ${action.username} migrated`);
+        } catch (err) {
+          console.log(`  ⚠ Failed to migrate action for ${action.username}: ${err.message}`);
+        }
       }
     }
   }
