@@ -1,0 +1,90 @@
+{
+  "guilds": {
+    "1463586435209760821": {
+      "channelId": "1463616280933433551"
+    }
+  },
+  "actions": [
+    {
+      "guildId": "1463586435209760821",
+      "userId": "1388585986782400552",
+      "username": "hangugeoreulgusahalsu",
+      "action": "Mute (30m)",
+      "moderator": "dx.nzaaa",
+      "reason": "No reason provided",
+      "timestamp": "2026-01-23T17:22:06.610Z"
+    },
+    {
+      "guildId": "1463586435209760821",
+      "userId": "1388585986782400552",
+      "username": "hangugeoreulgusahalsu",
+      "action": "Mute (10m)",
+      "moderator": "dx.nzaaa",
+      "reason": "No reason provided",
+      "timestamp": "2026-01-23T17:24:45.229Z"
+    },
+    {
+      "guildId": "1463586435209760821",
+      "userId": "1388585986782400552",
+      "username": "hangugeoreulgusahalsu",
+      "action": "Unmute",
+      "moderator": "dx.nzaaa",
+      "reason": "No reason provided",
+      "timestamp": "2026-01-23T17:24:57.764Z"
+    },
+    {
+      "guildId": "1463586435209760821",
+      "userId": "1388585986782400552",
+      "username": "hangugeoreulgusahalsu",
+      "action": "Kick",
+      "moderator": "dx.nzaaa",
+      "reason": "No reason provided",
+      "timestamp": "2026-01-23T17:25:16.558Z"
+    },
+    {
+      "guildId": "1463586435209760821",
+      "userId": "1388585986782400552",
+      "username": "hangugeoreulgusahalsu",
+      "action": "Kick",
+      "moderator": "dx.nzaaa",
+      "reason": "No reason provided",
+      "timestamp": "2026-01-24T17:14:37.124Z"
+    },
+    {
+      "guildId": "1463586435209760821",
+      "userId": "1359614368559534301",
+      "username": "dx.nzaaa",
+      "action": "Warn",
+      "moderator": "dx.nzaaa",
+      "reason": "jfnh",
+      "timestamp": "2026-01-24T19:27:52.785Z"
+    },
+    {
+      "guildId": "1463586435209760821",
+      "oderId": "1388585986782400552",
+      "username": "hangugeoreulgusahalsu",
+      "action": "Warn",
+      "moderator": "dx.nzaaa",
+      "reason": "idk",
+      "timestamp": "2026-01-29T19:47:36.466Z"
+    },
+    {
+      "guildId": "1463586435209760821",
+      "oderId": "1388585986782400552",
+      "username": "hangugeoreulgusahalsu",
+      "action": "Ban",
+      "moderator": "macne.nana.1fan_maryamm",
+      "reason": "uh",
+      "timestamp": "2026-01-29T21:10:59.066Z"
+    },
+    {
+      "guildId": "1463586435209760821",
+      "oderId": "1388585986782400552",
+      "username": "hangugeoreulgusahalsu",
+      "action": "Unban",
+      "moderator": "macne.nana.1fan_maryamm",
+      "reason": "js",
+      "timestamp": "2026-01-29T21:13:28.004Z"
+    }
+  ]
+}

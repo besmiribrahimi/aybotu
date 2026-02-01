@@ -1,0 +1,38 @@
+{
+  "triggers": {
+    "1463586435209760821": {
+      "67": {
+        "trigger": "67",
+        "response": "get out kid",
+        "exactMatch": false,
+        "embedResponse": false,
+        "createdBy": "macne.nana.1fan_maryamm",
+        "createdAt": "2026-01-29T21:06:41.364Z"
+      },
+      "ff": {
+        "trigger": "ff",
+        "response": "jevlkd",
+        "exactMatch": false,
+        "embedResponse": false,
+        "createdBy": "dx.nzaaa",
+        "createdAt": "2026-01-29T21:16:52.210Z"
+      },
+      ".req": {
+        "trigger": ".req",
+        "response": "someone requested go and do the job",
+        "exactMatch": false,
+        "embedResponse": true,
+        "createdBy": "macne.nana.1fan_maryamm",
+        "createdAt": "2026-01-29T21:17:57.354Z"
+      },
+      "eff": {
+        "trigger": "eff",
+        "response": "cwcdwc",
+        "exactMatch": true,
+        "embedResponse": false,
+        "createdBy": "dx.nzaaa",
+        "createdAt": "2026-01-29T21:18:47.198Z"
+      }
+    }
+  }
+}
