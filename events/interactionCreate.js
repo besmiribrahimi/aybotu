@@ -40,7 +40,6 @@ module.exports = {
       if (interaction.customId === 'helpRequestModal') {
         const requestType = interaction.fields.getTextInputValue('requestType');
         const description = interaction.fields.getTextInputValue('requestDescription');
-        const budget = interaction.fields.getTextInputValue('requestBudget') || 'Not specified';
 
         const embed = new EmbedBuilder()
           .setColor('#FFB7C5')
@@ -48,7 +47,6 @@ module.exports = {
           .setDescription(`୨୧ ⏔⏔⏔⏔♡⏔⏔⏔⏔ ୨୧\n\n**${interaction.user}** is looking for help!`)
           .addFields(
             { name: '⊹ ࣪✧ Type of Help ˖ °', value: requestType, inline: true },
-            { name: '⊹ ࣪✧ Budget ˖ °', value: budget, inline: true },
             { name: '⊹ ࣪✧ Description ˖ °', value: description, inline: false }
           )
           .setThumbnail(interaction.user.displayAvatarURL({ dynamic: true }))
